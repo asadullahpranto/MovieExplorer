@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ContentViewCell" customModule="MovieBrowsing" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="missingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="hWp-Pi-DuY">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="18.666666666666668"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udc-hG-8i1">
+                        <rect key="frame" x="0.0" y="30.666666666666671" width="38" height="19.333333333333329"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="udc-hG-8i1" secondAttribute="bottom" id="1db-fW-e9f"/>
+                <constraint firstItem="udc-hG-8i1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ETT-Xa-MSS"/>
+                <constraint firstItem="hWp-Pi-DuY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="N5v-q3-Ajm"/>
+                <constraint firstAttribute="trailing" secondItem="hWp-Pi-DuY" secondAttribute="trailing" id="UDz-9f-awd"/>
+                <constraint firstItem="hWp-Pi-DuY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Uio-p8-Jk5"/>
+                <constraint firstItem="udc-hG-8i1" firstAttribute="top" secondItem="hWp-Pi-DuY" secondAttribute="bottom" constant="12" id="Yzb-O8-hCf"/>
+            </constraints>
+            <connections>
+                <outlet property="movieTitle" destination="udc-hG-8i1" id="r12-48-XMc"/>
+                <outlet property="posterView" destination="hWp-Pi-DuY" id="OMr-NR-CKG"/>
+            </connections>
+            <point key="canvasLocation" x="91.603053435114504" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="missingIcon" width="336" height="240"/>
+    </resources>
+</document>
